@@ -24,3 +24,15 @@ class BaseCmd:
     def addCalc(a, b):
         # 足し算するだけ
         return a + b
+
+
+    # 入力された値がInt型かどうかチェックすr
+    def CheckInt(user_input):
+        try:
+            # 変数を整数に変換
+            int(user_input)
+            return True
+        except ValueError:
+            # 変換が失敗した場合は False を返す
+            return False
+
