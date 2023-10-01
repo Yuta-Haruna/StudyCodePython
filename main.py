@@ -1,5 +1,6 @@
 
 import sys
+from cmd.Test import Test
 from cmd.BaseCmd import BaseCmd
 
 
@@ -16,6 +17,8 @@ cmd.show_python_version()
 print( BaseCmd.function_name("aaaaa"))
 print(BaseCmd.addCalc(1,2))
 
+test = Test
+print(test.mergeAlternately("aaaa", "bbb"))
 
 print("--------------------------------------------------------")
 
